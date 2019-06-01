@@ -3,7 +3,7 @@ In this project you can keep your contacts as easily as possible with the possib
 # install the project
 https://github.com/bassamelbdrawy/icontact.git
 # run the project
-first 
+#### first 
 set FLASK_APP=project.py
-second
+#### second
 flask run
