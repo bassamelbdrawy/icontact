@@ -8,6 +8,8 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
 from helpers import login_required, allowed_file
 import csv
+import pymysql
+pymysql.install_as_MySQLdb()
 
 UPLOAD_FOLDER = './storage/'
 # Configure application
@@ -210,4 +212,3 @@ def upload():
     else:
         return render_template("upload.html")
 
-#not forget remove form from buttoms login / reg
